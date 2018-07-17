@@ -21,3 +21,6 @@ var rs1 = memoized(number);
 var rs2 = memoized(number);
 
 ```
+
+## resouces:
++ https://www.jianshu.com/p/4756fbe61a63
