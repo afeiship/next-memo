@@ -1,6 +1,7 @@
 {
   "name": "next-memoize",
-  "description": "Memoize for next",
+  "version": "0.0.1",
+  "description": "nextBoilerplatePackageDescription",
   "main": "dist/next-memoize.js",
   "authors": [
     "afei"
@@ -19,6 +20,7 @@
     "bower_components",
     "test",
     "tests",
+    "build",
     "src",
     "gulp",
     "gulpfile.js"

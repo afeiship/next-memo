@@ -1,26 +1,24 @@
 # next-memoize
-> Memoize for next
+> Memoize for next.
 
-## install:
+## installation
 ```bash
-npm install -S afeiship/next-memoize --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-memoize
 ```
 
-## usage:
+## usage
 ```js
-var fibonacci = (n) => {
+import '@feizheng/next-memoize';
+
+const fibonacci = (n) => {
   return n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2);
 };
-var memoized = nx.memoize(
+const memoized = nx.memoize(
   fibonacci
 );
 
 // First time: calc
-var rs1 = memoized(number);
+const rs1 = memoized(number);
 // Next time: From Cache
-var rs2 = memoized(number);
-
+const rs2 = memoized(number);
 ```
-
-## resouces:
-+ https://www.jianshu.com/p/4756fbe61a63

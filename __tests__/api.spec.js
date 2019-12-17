@@ -1,21 +1,16 @@
-var assert = require('assert');
-var nx = require('next-js-core2');
+const nx = require('@feizheng/next-js-core2');
 require('../src/next-memoize');
-
 
 var fibonacci = (n) => {
   return n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2);
 };
 
-describe('next/memoize', function () {
-
-  it('nx.memoize', function () {
+describe('next/memoize', function() {
+  test('nx.memoize', function() {
     var start, end;
     var dur1, dur2;
     var number = 38;
-    var memoized = nx.memoize(
-      fibonacci
-    );
+    var memoized = nx.memoize(fibonacci);
 
     console.log('calcatiing, wait...');
 
@@ -34,8 +29,7 @@ describe('next/memoize', function () {
     // console.log(dur1);
     // console.log(dur2);
 
-    assert.equal(rs1, rs2);
-    assert.equal(dur1 > dur2, true);
+    expect(rs1).toBe(rs2);
+    expect(dur1 > dur2).toBe(true);
   });
-
 });
