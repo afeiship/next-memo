@@ -2,8 +2,8 @@
  * name: @feizheng/next-memoize
  * description: Memoize for next.
  * homepage: https://github.com/afeiship/next-memoize
- * version: 1.0.2
- * date: 2020-08-12T15:04:18.322Z
+ * version: 1.0.3
+ * date: 2020-08-12T15:08:14.249Z
  * license: MIT
  */
 
