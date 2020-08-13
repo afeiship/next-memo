@@ -50,13 +50,12 @@ describe('next/memoize', function () {
 
     var rs1 = getter(fei, 'github');
     var rs11 = nx.get(fei, 'github');
-    console.log(rs1, rs11);
+    expect(rs1).toEqual(rs11);
     fei.github = 'aaa';
 
     var rs2 = getter(fei, 'github');
     var rs22 = nx.get(fei, 'github');
-    console.log(rs2, rs22);
-    console.log(nx.cc);
+    expect(rs2).toEqual(rs22);
   });
 
   test('nx.get test', () => {
