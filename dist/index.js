@@ -3,7 +3,7 @@
  * description: Memoize for next.
  * homepage: https://github.com/afeiship/next-memoize
  * version: 1.0.0
- * date: 2020-11-20 17:04:58
+ * date: 2020-11-20 17:06:03
  * license: MIT
  */
 
