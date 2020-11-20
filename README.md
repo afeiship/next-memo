@@ -8,12 +8,12 @@
 
 ## installation
 ```bash
-npm install -S @feizheng/next-memoize
+npm install -S @jswork/next-memoize
 ```
 
 ## usage
 ```js
-import '@feizheng/next-memoize';
+import '@jswork/next-memoize';
 
 const fibonacci = (n) => {
   return n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2);
@@ -31,14 +31,14 @@ const rs2 = memoized(number);
 ## license
 Code released under [the MIT license](https://github.com/afeiship/next-memoize/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/next-memoize
-[version-url]: https://npmjs.org/package/@feizheng/next-memoize
+[version-image]: https://img.shields.io/npm/v/@jswork/next-memoize
+[version-url]: https://npmjs.org/package/@jswork/next-memoize
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/next-memoize
+[license-image]: https://img.shields.io/npm/l/@jswork/next-memoize
 [license-url]: https://github.com/afeiship/next-memoize/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/next-memoize
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-memoize
 [size-url]: https://github.com/afeiship/next-memoize/blob/master/dist/next-memoize.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@feizheng/next-memoize
-[download-url]: https://www.npmjs.com/package/@feizheng/next-memoize
+[download-image]: https://img.shields.io/npm/dm/@jswork/next-memoize
+[download-url]: https://www.npmjs.com/package/@jswork/next-memoize

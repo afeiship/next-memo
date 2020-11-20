@@ -1,6 +1,15 @@
+/*!
+ * name: @jswork/next-memoize
+ * description: Memoize for next.
+ * homepage: https://github.com/afeiship/next-memoize
+ * version: 1.0.0
+ * date: 2020-11-20 17:04:58
+ * license: MIT
+ */
+
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var hasOwnProp = Object.prototype.hasOwnProperty;
 
   nx.memoize = function (inCallback, inKeyGen) {
