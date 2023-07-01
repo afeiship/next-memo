@@ -1,20 +1,20 @@
-(function () {
-  var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@jswork/next');
-  var hasOwnProp = Object.prototype.hasOwnProperty;
+import nx from '@jswork/next';
 
-  nx.memoize = function (inCallback, inKeyGen) {
-    var cache = {};
-    var keyGen = inKeyGen || JSON.stringify;
-    return function () {
-      var key = keyGen(arguments);
-      return hasOwnProp.call(cache, key)
-        ? cache[key]
-        : (cache[key] = inCallback.apply(null, arguments));
-    };
+nx.memo = function (inCallback, inKeyGen) {
+  var cache = {};
+  var keyGen = inKeyGen || JSON.stringify;
+  return function () {
+    var key = keyGen(arguments);
+    if (cache.hasOwnProperty(key)) return cache[key];
+
+    const result = inCallback.apply(null, arguments);
+    cache[key] = result;
+    return result;
   };
+};
 
-  if (typeof module !== 'undefined' && module.exports) {
-    module.exports = nx.memoize;
-  }
-})();
+if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
+  module.exports = nx.memo;
+}
+
+export default nx.memo;
